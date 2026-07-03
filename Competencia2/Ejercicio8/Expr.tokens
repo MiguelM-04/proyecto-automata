@@ -1,0 +1,5 @@
+IDENT=1
+MAYOR_IGUAL=2
+NUM=3
+WS=4
+'>='=2
