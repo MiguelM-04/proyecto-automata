@@ -1,0 +1,34 @@
+grammar Expr;
+
+root: expr EOF ;    
+
+expr: EOF;
+CREATE: 'CREATE';
+TABLE: 'TABLE';
+INSERT: 'INSERT';
+INTO: 'INTO';
+VALUES: 'VALUES';
+SELECT: 'SELECT';
+FROM: 'FROM';
+WHERE: 'WHERE';
+INNER: 'INNER';
+JOIN: 'JOIN';
+ON: 'ON';
+SERIAL: 'SERIAL';
+PRIMARY: 'PRIMARY';
+KEY: 'KEY';
+VARCHAR: 'VARCHAR';
+NOT: 'NOT';
+NULL_: 'NULL';
+INTEGER: 'INTEGER';
+DATE: 'DATE';
+PARENTESIS_IZQ: '(';
+PARENTESIS_DER: ')';
+COMA: ',';
+PUNTO_COMA: ';';
+PUNTO: '.';
+IGUAL: '=';
+CADENA: '\'' ~['\r\n]* '\'' ;
+IDF: [a-zA-Z_][a-zA-Z0-9_]* ;
+NUM: [0-9]+ ;
+WS: [ \t\r\n]+ -> skip ;
