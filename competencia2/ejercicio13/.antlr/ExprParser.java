@@ -1,4 +1,4 @@
-// Generated from c:/Users/marmi/proyecto-automatas/competencia2/ejercicio10/Expr.g4 by ANTLR 4.13.1
+// Generated from c:/Users/marmi/proyecto-automatas/competencia2/ejercicio13/Expr.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -16,7 +16,10 @@ public class ExprParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		PRINT=1, CADENA=2, PAR_IZQ=3, PAR_DER=4, PUNTO_COMA=5, WS=6;
+		CREATE=1, TABLE=2, INSERT=3, INTO=4, VALUES=5, SELECT=6, FROM=7, WHERE=8, 
+		INNER=9, JOIN=10, ON=11, SERIAL=12, PRIMARY=13, KEY=14, VARCHAR=15, NOT=16, 
+		NULL_=17, INTEGER=18, DATE=19, PARENTESIS_IZQ=20, PARENTESIS_DER=21, COMA=22, 
+		PUNTO_COMA=23, PUNTO=24, IGUAL=25, CADENA=26, IDF=27, NUM=28, WS=29;
 	public static final int
 		RULE_root = 0, RULE_expr = 1;
 	private static String[] makeRuleNames() {
@@ -28,13 +31,19 @@ public class ExprParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'print'", null, "'('", "')'", "';'"
+			null, "'CREATE'", "'TABLE'", "'INSERT'", "'INTO'", "'VALUES'", "'SELECT'", 
+			"'FROM'", "'WHERE'", "'INNER'", "'JOIN'", "'ON'", "'SERIAL'", "'PRIMARY'", 
+			"'KEY'", "'VARCHAR'", "'NOT'", "'NULL'", "'INTEGER'", "'DATE'", "'('", 
+			"')'", "','", "';'", "'.'", "'='"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "PRINT", "CADENA", "PAR_IZQ", "PAR_DER", "PUNTO_COMA", "WS"
+			null, "CREATE", "TABLE", "INSERT", "INTO", "VALUES", "SELECT", "FROM", 
+			"WHERE", "INNER", "JOIN", "ON", "SERIAL", "PRIMARY", "KEY", "VARCHAR", 
+			"NOT", "NULL_", "INTEGER", "DATE", "PARENTESIS_IZQ", "PARENTESIS_DER", 
+			"COMA", "PUNTO_COMA", "PUNTO", "IGUAL", "CADENA", "IDF", "NUM", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -154,7 +163,7 @@ public class ExprParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0006\n\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
+		"\u0004\u0001\u001d\n\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
 		"\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0000"+
 		"\u0000\u0002\u0000\u0002\u0000\u0000\u0007\u0000\u0004\u0001\u0000\u0000"+
 		"\u0000\u0002\u0007\u0001\u0000\u0000\u0000\u0004\u0005\u0003\u0002\u0001"+

@@ -1,4 +1,4 @@
-// Generated from c:/Users/marmi/proyecto-automatas/competencia2/ejercicio10/Expr.g4 by ANTLR 4.13.1
+// Generated from c:/Users/marmi/proyecto-automatas/competencia2/ejercicio15/Expr.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -16,7 +16,9 @@ public class ExprParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		PRINT=1, CADENA=2, PAR_IZQ=3, PAR_DER=4, PUNTO_COMA=5, WS=6;
+		NMAP=1, SUDO=2, TCPDUMP=3, SS=4, CURL=5, DIG=6, JOURNALCTL=7, GREP=8, 
+		UFW=9, DENY=10, FROM=11, MX=12, TODAY=13, FLAG_LARGA=14, FLAG_CORTA=15, 
+		IP_CIDR=16, IP=17, RUTA=18, DOMINIO=19, CADENA=20, IDF=21, NUM=22, WS=23;
 	public static final int
 		RULE_root = 0, RULE_expr = 1;
 	private static String[] makeRuleNames() {
@@ -28,13 +30,16 @@ public class ExprParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'print'", null, "'('", "')'", "';'"
+			null, "'nmap'", "'sudo'", "'tcpdump'", "'ss'", "'curl'", "'dig'", "'journalctl'", 
+			"'grep'", "'ufw'", "'deny'", "'from'", "'MX'", "'today'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "PRINT", "CADENA", "PAR_IZQ", "PAR_DER", "PUNTO_COMA", "WS"
+			null, "NMAP", "SUDO", "TCPDUMP", "SS", "CURL", "DIG", "JOURNALCTL", "GREP", 
+			"UFW", "DENY", "FROM", "MX", "TODAY", "FLAG_LARGA", "FLAG_CORTA", "IP_CIDR", 
+			"IP", "RUTA", "DOMINIO", "CADENA", "IDF", "NUM", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -154,7 +159,7 @@ public class ExprParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0006\n\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
+		"\u0004\u0001\u0017\n\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
 		"\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0000"+
 		"\u0000\u0002\u0000\u0002\u0000\u0000\u0007\u0000\u0004\u0001\u0000\u0000"+
 		"\u0000\u0002\u0007\u0001\u0000\u0000\u0000\u0004\u0005\u0003\u0002\u0001"+

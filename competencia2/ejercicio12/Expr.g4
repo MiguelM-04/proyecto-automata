@@ -1,0 +1,31 @@
+grammar Expr;
+
+root: expr EOF ;    
+
+expr: EOF;
+PUBLIC:'public';
+CLASS:'class';
+IDF: [a-zA-Z]+ ;
+LLAVE_IZQ:'{';
+STRING:'String';
+STATIC:'static';
+ARGS:'args';
+VOID:'void';
+MAIN:'main';
+PARENTESIS_IZQ:'(';
+PARENTESIS_DER:')';
+MAYOR:'>';
+MENOR:'<';
+INT:'int';
+IGUAL:'=';
+NUM: [0-9]+ ;
+PUNTO_COMA:';';
+LLAVE_DER:'}';
+CORCHETE_IZQ:'[';
+CORCHETE_DER:']';
+MAS:'+';
+PUNTO:'.';
+DOS_PUNTOS:':';
+ASTER: '*';
+CADENA:'"' ~["\r\n]* '"';
+WS: [ \t\r\n]+ -> skip ;

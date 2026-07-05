@@ -1,4 +1,4 @@
-// Generated from c:/Users/marmi/proyecto-automatas/competencia2/ejercicio10/Expr.g4 by ANTLR 4.13.1
+// Generated from c:/Users/marmi/proyecto-automatas/competencia2/ejercicio11/Expr.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -16,7 +16,10 @@ public class ExprParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		PRINT=1, CADENA=2, PAR_IZQ=3, PAR_DER=4, PUNTO_COMA=5, WS=6;
+		PUBLIC=1, CLASS=2, IDF=3, LLAVE_IZQ=4, STATIC=5, STRING=6, VOID=7, MAIN=8, 
+		PARENTESIS_IZQ=9, PARENTESIS_DER=10, INT=11, IGUAL=12, NUM=13, PUNTO_COMA=14, 
+		LLAVE_DER=15, CORCHETE_IZQ=16, CORCHETE_DER=17, MAS=18, PUNTO=19, COMILLAS=20, 
+		DOS_PUNTOS=21, ASTER=22, WS=23;
 	public static final int
 		RULE_root = 0, RULE_expr = 1;
 	private static String[] makeRuleNames() {
@@ -28,13 +31,18 @@ public class ExprParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'print'", null, "'('", "')'", "';'"
+			null, "'public'", "'class'", null, "'{'", "'static'", "'String'", "'void'", 
+			"'main'", "'('", "')'", "'int'", "'='", null, "';'", "'}'", "'['", "']'", 
+			"'+'", "'.'", "'\"'", "':'", "'*'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "PRINT", "CADENA", "PAR_IZQ", "PAR_DER", "PUNTO_COMA", "WS"
+			null, "PUBLIC", "CLASS", "IDF", "LLAVE_IZQ", "STATIC", "STRING", "VOID", 
+			"MAIN", "PARENTESIS_IZQ", "PARENTESIS_DER", "INT", "IGUAL", "NUM", "PUNTO_COMA", 
+			"LLAVE_DER", "CORCHETE_IZQ", "CORCHETE_DER", "MAS", "PUNTO", "COMILLAS", 
+			"DOS_PUNTOS", "ASTER", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -154,7 +162,7 @@ public class ExprParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0006\n\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
+		"\u0004\u0001\u0017\n\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
 		"\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0000"+
 		"\u0000\u0002\u0000\u0002\u0000\u0000\u0007\u0000\u0004\u0001\u0000\u0000"+
 		"\u0000\u0002\u0007\u0001\u0000\u0000\u0000\u0004\u0005\u0003\u0002\u0001"+
